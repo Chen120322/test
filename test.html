@@ -1,0 +1,91 @@
+<html>
+	<body>
+		<iframe id = "iframe1"
+          src="http://vip.jibobao.com/"
+          frameborder="0"
+          width="100%"
+          height="1200px"
+          allowtransparency
+          
+      ></iframe>
+	  <iframe id = "iframe2"
+          src="https://coinmarketcap.com/"
+          frameborder="0"
+          width="100%"
+          height="1200px"
+          allowtransparency
+          
+      ></iframe>
+    <iframe  id = "iframe3"
+          src="https://www.fmz.com/login"
+          frameborder="0"
+          width="100%"
+          height="1200px"
+          allowtransparency
+          
+      ></iframe>
+	</body>
+	<script>
+		var index = 1
+		var amount = 3
+		window.onload = function(){
+			setInterval(run, 1000 * 30)
+		}
+		function run () {
+			switch(index) {
+				case 1:
+					//通过id获取
+					var part =document.getElementById("iframe1");
+					//修改display block为显示 none为隐藏
+					part.style.display="block";
+					
+					//通过id获取
+					var part =document.getElementById("iframe2");
+					//修改display block为显示 none为隐藏
+					part.style.display="none";
+					
+					//通过id获取
+					var part =document.getElementById("iframe3");
+					//修改display block为显示 none为隐藏
+					part.style.display="none";
+					break
+				case 2:
+					//通过id获取
+					var part =document.getElementById("iframe1");
+					//修改display block为显示 none为隐藏
+					part.style.display="none";
+					
+					//通过id获取
+					var part =document.getElementById("iframe2");
+					//修改display block为显示 none为隐藏
+					part.style.display="block";
+					
+					//通过id获取
+					var part =document.getElementById("iframe3");
+					//修改display block为显示 none为隐藏
+					part.style.display="none";
+					break
+				case 3:
+					//通过id获取
+					var part =document.getElementById("iframe1");
+					//修改display block为显示 none为隐藏
+					part.style.display="none";
+					
+					//通过id获取
+					var part =document.getElementById("iframe2");
+					//修改display block为显示 none为隐藏
+					part.style.display="none";
+					
+					//通过id获取
+					var part =document.getElementById("iframe3");
+					//修改display block为显示 none为隐藏
+					part.style.display="block";
+					break
+			} 
+			index = index + 1
+			if (index > amount) {
+				index = 1
+			}
+		}
+	</script>
+</html>
